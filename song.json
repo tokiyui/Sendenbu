@@ -1,11 +1,11 @@
 [
     {
-        "title": "土っキュン!! 少女",
+        "title": "土っキュン♡!!少女",
         "lyrics": "浅利進吾",
         "music": "浅利進吾",
         "arranger": "浅利進吾",
         "length": "",
-        "CDtitle": "土っキュン!! 少女",
+        "CDtitle": "土っキュン♡!!少女",
         "info": ""
     },
     {
@@ -14,25 +14,31 @@
         "music": "木下智哉",
         "arranger": "木下智哉",
         "length": "",
-        "CDtitle": "土っキュン!! 少女",
+        "CDtitle": "土っキュン♡!!少女",
         "info": ""
     },
     {
         "title": "僕らの未来",
-        "lyrics": "近藤キネオ・saname",
-        "music": "山下洋介・菊本真広",
+        "lyrics": [
+            "近藤キネオ",
+            "saname"
+        ],
+        "music": [
+            "山下洋介",
+            "菊本真広"
+        ],
         "arranger": "山下洋介",
         "length": "",
-        "CDtitle": "土っキュン!! 少女",
+        "CDtitle": "土っキュン♡!!少女",
         "info": ""
     },
     {
-        "title": "季節外れのときめきサマー",
+        "title": "季節外れのときめき♡サマー",
         "lyrics": "浅利進吾",
         "music": "浅利進吾",
         "arranger": "浅利進吾",
         "length": "",
-        "CDtitle": "季節外れのときめきサマー",
+        "CDtitle": "季節外れのときめき♡サマー",
         "info": ""
     },
     {
@@ -41,7 +47,7 @@
         "music": "浅利進吾",
         "arranger": "浅利進吾",
         "length": "",
-        "CDtitle": "季節外れのときめきサマー",
+        "CDtitle": "季節外れのときめき♡サマー",
         "info": ""
     },
     {
@@ -50,16 +56,16 @@
         "music": "磯崎健史",
         "arranger": "磯崎健史",
         "length": "",
-        "CDtitle": "季節外れのときめきサマー",
+        "CDtitle": "季節外れのときめき♡サマー",
         "info": ""
     },
     {
-        "title": "サンタさんが・・・・・やってこない！",
+        "title": "サンタさんが・・・・・やってこない!",
         "lyrics": "浅利進吾",
         "music": "浅利進吾",
         "arranger": "浅利進吾",
         "length": "",
-        "CDtitle": "季節外れのときめきサマー",
+        "CDtitle": "季節外れのときめき♡サマー",
         "info": ""
     },
     {
@@ -104,14 +110,20 @@
         "music": "浅利進吾",
         "arranger": "浅利進吾",
         "length": "",
-        "CDtitle": "ガンバ!!・ときおとめ",
+        "CDtitle": [
+            "ガンバ!!",
+            "ときおとめ"
+        ],
         "info": ""
     },
     {
         "title": "青春アンセム",
         "lyrics": "杉山勝彦",
         "music": "杉山勝彦",
-        "arranger": "杉山勝彦・三谷秀甫",
+        "arranger": [
+            "杉山勝彦",
+            "三谷秀甫"
+        ],
         "length": "",
         "CDtitle": "ガンバ!!",
         "info": ""
@@ -127,7 +139,10 @@
     },
     {
         "title": "いざ、大和撫子",
-        "lyrics": "youth case・鈴木裕哉",
+        "lyrics": [
+            "youth case",
+            "鈴木裕哉"
+        ],
         "music": "youth case",
         "arranger": "youth case",
         "length": "",
@@ -140,7 +155,10 @@
         "music": "前山田健一",
         "arranger": "板垣祐介",
         "length": "",
-        "CDtitle": "どどどどどりーまー・ときおとめ",
+        "CDtitle": [
+            "どどどどどりーまー",
+            "ときおとめ"
+        ],
         "info": ""
     },
     {
@@ -173,7 +191,10 @@
     {
         "title": "フレ!フレ!",
         "lyrics": "イワツボコーダイ",
-        "music": "GRP・イワツボコーダイ",
+        "music": [
+            "GRP",
+            "イワツボコーダイ"
+        ],
         "arranger": "久下真音",
         "length": "",
         "CDtitle": "どどどどどりーまー",
@@ -190,16 +211,30 @@
     },
     {
         "title": "DEADHEAT",
-        "lyrics": "栗原暁(Jazzin'park)・久保田真悟(Jazzin'park)・Tasuku Maeda",
-        "music": "栗原暁(Jazzin'park)・久保田真悟(Jazzin'park)・Tasuku Maeda",
+        "lyrics": [
+            "栗原暁(Jazzin'park)",
+            "久保田真悟(Jazzin'park)",
+            "Tasuku Maeda"
+        ],
+        "music": [
+            "栗原暁(Jazzin'park)",
+            "久保田真悟(Jazzin'park)",
+            "Tasuku Maeda"
+        ],
         "arranger": "栗原暁",
         "length": "",
-        "CDtitle": "DEADHEAT・ときおとめ",
+        "CDtitle": [
+            "DEADHEAT",
+            "ときおとめ"
+        ],
         "info": ""
     },
     {
         "title": "ビッグ☆バン",
-        "lyrics": "佐藤有紗・藤末樹",
+        "lyrics": [
+            "佐藤有紗",
+            "藤末樹"
+        ],
         "music": "藤末樹",
         "arranger": "藤末樹",
         "length": "",
@@ -208,8 +243,16 @@
     },
     {
         "title": "BANBANBAN",
-        "lyrics": "ANDW・久下真音・かまやつひろし",
-        "music": "ANDW・久下真音・かまやつひろし",
+        "lyrics": [
+            "ANDW",
+            "久下真音",
+            "かまやつひろし"
+        ],
+        "music": [
+            "ANDW",
+            "久下真音",
+            "かまやつひろし"
+        ],
         "arranger": "久下真音",
         "length": "",
         "CDtitle": "DEADHEAT",
@@ -235,11 +278,17 @@
     },
     {
         "title": "そんな毎日",
-        "lyrics": "金沢知樹・小池樹里杏",
+        "lyrics": [
+            "金沢知樹",
+            "小池樹里杏"
+        ],
         "music": "山下洋介",
         "arranger": "山下洋介",
         "length": "",
-        "CDtitle": "DEADHEAT・ときおとめ",
+        "CDtitle": [
+            "DEADHEAT",
+            "ときおとめ"
+        ],
         "info": ""
     },
     {
@@ -262,7 +311,10 @@
     },
     {
         "title": "SWEET SWEET DAYS",
-        "lyrics": "JxSxK・松隈ケンタ",
+        "lyrics": [
+            "JxSxK",
+            "松隈ケンタ"
+        ],
         "music": "松隈ケンタ",
         "arranger": "SCRAMBLES",
         "length": "",
@@ -280,16 +332,28 @@
     },
     {
         "title": "プリンセスプリンセスプリンセス",
-        "lyrics": "栗原暁(Jazzin'park)・久保田真悟(Jazzin'park)",
-        "music": "栗原暁(Jazzin'park)・久保田真悟(Jazzin'park)",
-        "arranger": "久保田真悟(Jazzin'park)・栗原暁(Jazzin'park)",
+        "lyrics": [
+            "栗原暁(Jazzin'park)",
+            "久保田真悟(Jazzin'park)"
+        ],
+        "music": [
+            "栗原暁(Jazzin'park)",
+            "久保田真悟(Jazzin'park)"
+        ],
+        "arranger": [
+            "久保田真悟(Jazzin'park)",
+            "栗原暁(Jazzin'park)"            
+        ],
         "length": "",
         "CDtitle": "ときおとめ",
         "info": ""
     },
     {
         "title": "PaPiPoPiポップガール",
-        "lyrics": "神谷礼・Y☆K☆K",
+        "lyrics": [
+            "神谷礼",
+            "Y☆K☆K"
+        ],
         "music": "神谷礼",
         "arranger": "神谷礼",
         "length": "",
@@ -298,9 +362,21 @@
     },
     {
         "title": "TRAP",
-        "lyrics": "栗原暁(Jazzin'park)・久保田真悟(Jazzin'park)・Tasuku Maeda",
-        "music": "栗原暁(Jazzin'park)・久保田真悟(Jazzin'park)・Tasuku Maeda",
-        "arranger": "久保田真悟(Jazzin'park)・栗原暁(Jazzin'park)・Tasuku Maeda",
+        "lyrics": [
+            "栗原暁(Jazzin'park)",
+            "久保田真悟(Jazzin'park)",
+            "Tasuku Maeda"
+        ],
+        "music": [
+            "栗原暁(Jazzin'park)",
+            "久保田真悟(Jazzin'park)",
+            "Tasuku Maeda"
+        ],
+        "arranger": [
+            "久保田真悟(Jazzin'park)",
+            "栗原暁(Jazzin'park)",
+            "Tasuku Maeda"
+        ],
         "length": "",
         "CDtitle": "ときおとめ",
         "info": ""
@@ -317,7 +393,10 @@
     {
         "title": "キタコレ！モーニング",
         "lyrics": "Ayaka Miyake",
-        "music": "Ayaka Miyake・Carlos K.",
+        "music": [
+            "Ayaka Miyake",
+            "Carlos K."
+        ],
         "arranger": "Carlos K.",
         "length": "",
         "CDtitle": "ときおとめ",
@@ -333,7 +412,7 @@
         "info": ""
     },
     {
-        "title": "すきっ！PLATINA LYLIC",
+        "title": "すきっ!",
         "lyrics": "中村瑛彦(SUPA LOVE)",
         "music": "中村瑛彦(SUPA LOVE)",
         "arranger": "伊東大和(SUPA LOVE)",
@@ -352,11 +431,17 @@
     },
     {
         "title": "ときめき宣伝部のVICTORY STORY",
-        "lyrics": "allforone・ARAKI",
+        "lyrics": [
+            "allforone",
+            "ARAKI"
+        ],
         "music": "松隈ケンタ",
         "arranger": "SCRAMBLES",
         "length": "",
-        "CDtitle": "ときめき宣伝部のVICTORY STORY/青春ハートシェイカー・ときめきがすべて",
+        "CDtitle": [
+            "ときめき宣伝部のVICTORY STORY/青春ハートシェイカー",
+            "ときめきがすべて"
+        ],
         "info": ""
     },
     {
@@ -365,7 +450,10 @@
         "music": "ジンツチハシ",
         "arranger": "ジンツチハシ",
         "length": "",
-        "CDtitle": "ときめき宣伝部のVICTORY STORY/青春ハートシェイカー・ときめきがすべて",
+        "CDtitle": [
+            "ときめき宣伝部のVICTORY STORY/青春ハートシェイカー",
+            "ときめきがすべて"
+        ],
         "info": ""
     },
     {
@@ -401,7 +489,10 @@
         "music": "宮崎誠",
         "arranger": "",
         "length": "",
-        "CDtitle": "GAMUSHARA・ときめきがすべて",
+        "CDtitle": [
+            "GAMUSHARA",
+            "ときめきがすべて"
+        ],
         "info": ""
     },
     {
@@ -410,12 +501,18 @@
         "music": "MUTEKI DEAD SNAKE",
         "arranger": "MUTEKI DEAD SNAKE",
         "length": "",
-        "CDtitle": "恋のシェイプアップ・ときめきがすべて",
+        "CDtitle": [
+            "恋のシェイプアップ",
+            "ときめきがすべて"
+        ],
         "info": ""
     },
     {
         "title": "妄想プールデート",
-        "lyrics": "K2DN.・庄田ゲゲゲ",
+        "lyrics": [
+            "K2DN.",
+            "庄田ゲゲゲ"
+        ],
         "music": "K2DN.",
         "arranger": "",
         "length": "",
@@ -435,7 +532,7 @@
         "title": "一方通行、恋の罠",
         "lyrics": "yuiko",
         "music": "山上智矢",
-        "arranger": "山上 智矢",
+        "arranger": "山上智矢",
         "length": "",
         "CDtitle": "恋のシェイプアップ",
         "info": ""
@@ -455,7 +552,10 @@
         "music": "MUTEKI DEAD SNAKE",
         "arranger": "MUTEKI DEAD SNAKE",
         "length": "",
-        "CDtitle": "トゥモロー最強説!!・ときめきがすべて",
+        "CDtitle": [
+            "トゥモロー最強説!!",
+            "ときめきがすべて"
+        ],
         "info": ""
     },
     {
@@ -480,7 +580,7 @@
         "title": "わたし、ナンバーワンガール！",
         "lyrics": "yuiko",
         "music": "山上智矢",
-        "arranger": "山上 智矢",
+        "arranger": "山上智矢",
         "length": "",
         "CDtitle": "トゥモロー最強説!!",
         "info": ""
@@ -497,7 +597,10 @@
     {
         "title": "ライオンガール",
         "lyrics": "栗原暁(Jazzin'park)",
-        "music": "久保田真悟(Jazzin'park)・栗原暁(Jazzin'park)",
+        "music": [
+            "久保田真悟(Jazzin'park)",
+            "栗原暁(Jazzin'park)"
+        ],
         "arranger": "久保田真悟",
         "length": "",
         "CDtitle": "ときめきがすべて",
@@ -532,15 +635,21 @@
     },
     {
         "title": "お届け！デリバリースター",
-        "lyrics": "赤飯・ぽにきんぐだむ",
-        "music": "324・赤飯",
+        "lyrics": [
+            "赤飯",
+            "ぽにきんぐだむ"
+        ],
+        "music": [
+            "324",
+            "赤飯"
+        ],
         "arranger": "",
         "length": "",
         "CDtitle": "ときめきがすべて",
         "info": ""
     },
     {
-        "title": "SHIBUYA TSUTAYA前で待ち合わせね！",
+        "title": "SHIBUYA TSUTAYA前で待ち合わせね!",
         "lyrics": "ヨシダタクミ(saji)",
         "music": "ヨシダタクミ(saji)",
         "arranger": "",
@@ -569,7 +678,10 @@
     {
         "title": "ジャンケンポン",
         "lyrics": "katsuki.CF(Relic Lyric, inc.)",
-        "music": "須田悦弘・katsuki.CF(Relic Lyric, inc.)",
+        "music": [
+            "須田悦弘",
+            "katsuki.CF(Relic Lyric, inc.)"
+        ],
         "arranger": "須田悦弘",
         "length": "",
         "CDtitle": "すきすきすきすきすきすきっ!",
@@ -577,7 +689,10 @@
     },
     {
         "title": "超ステップアップ",
-        "lyrics": "yumieda takumi・藤田卓也",
+        "lyrics": [
+            "yumieda takumi",
+            "藤田卓也"
+        ],
         "music": "fu_mou",
         "arranger": "fu_mou",
         "length": "",
@@ -595,8 +710,14 @@
     },
     {
         "title": "Cupid in Love",
-        "lyrics": "Joshua Leung・栗原暁(Jazzin'park)",
-        "music": "Joshua Leung・栗原暁(Jazzin'park)",
+        "lyrics": [
+            "Joshua Leung",
+            "栗原暁(Jazzin'park)"
+        ],
+        "music": [
+            "Joshua Leung",
+            "栗原暁(Jazzin'park)"
+        ],
         "arranger": "",
         "length": "",
         "CDtitle": "ハートギュッと!",
@@ -614,7 +735,10 @@
     {
         "title": "きっとスタンダード",
         "lyrics": "常楽寺澪",
-        "music": "石黑剛・常楽寺澪",
+        "music": [
+            "石黑剛",
+            "常楽寺澪"
+        ],
         "arranger": "石黒剛",
         "length": "",
         "CDtitle": "ハートギュッと!",
@@ -624,7 +748,10 @@
         "title": "なんでもいいから",
         "lyrics": "鶴崎輝一",
         "music": "鶴崎輝一",
-        "arranger": "AKIRA・前田佑",
+        "arranger": [
+            "AKIRA",
+            "前田佑"
+        ],
         "length": "",
         "CDtitle": "ハートギュッと!",
         "info": ""
@@ -644,14 +771,20 @@
         "music": "MUTEKI DEAD SNAKE",
         "arranger": "MUTEKI DEAD SNAKE",
         "length": "",
-        "CDtitle": "STAR・ときめく恋と青春",
+        "CDtitle": [
+            "STAR",
+            "ときめく恋と青春"
+        ],
         "info": ""
     },
     {
         "title": "わがままプリンセス",
         "lyrics": "石黑剛",
         "music": "石黑剛",
-        "arranger": "ha-j・石黑剛",
+        "arranger": [
+            "ha-j",
+            "石黑剛"
+        ],
         "length": "",
         "CDtitle": "STAR",
         "info": ""
@@ -659,7 +792,10 @@
     {
         "title": "ホップステップジャンプLOVE",
         "lyrics": "Eri Osanai",
-        "music": "YAGO・Yu-ki Kokbo",
+        "music": [
+            "YAGO",
+            "Yu-ki Kokbo"
+        ],
         "arranger": "YAGO",
         "length": "",
         "CDtitle": "STAR",
@@ -671,14 +807,23 @@
         "music": "MUTEKI DEAD SNAKE",
         "arranger": "MUTEKI DEAD SNAKE",
         "length": "",
-        "CDtitle": "LOVEイヤイヤ期・ときめく恋と青春",
+        "CDtitle": [
+            "LOVEイヤイヤ期",
+            "ときめく恋と青春"
+        ],
         "info": ""
     },
     {
         "title": "ドキドキ ドキドキ",
         "lyrics": "谷口尚久",
-        "music": "辻村有記・伊藤賢",
-        "arranger": "辻村有記・伊藤賢",
+        "music": [
+            "辻村有記"
+            "伊藤賢"
+        ],
+        "arranger": [
+            "辻村有記"
+            "伊藤賢"
+        ],
         "length": "",
         "CDtitle": "LOVEイヤイヤ期",
         "info": ""
@@ -696,7 +841,10 @@
         "title": "ゼッタイだよ",
         "lyrics": "MUTEKI DEAD SNAKE",
         "music": "めんま",
-        "arranger": "ha-j・めんま",
+        "arranger": [
+            "ha-j",
+            "めんま"
+        ],
         "length": "",
         "CDtitle": "LOVEイヤイヤ期",
         "info": ""
@@ -707,7 +855,10 @@
         "music": "MUTEKI DEAD SNAKE",
         "arranger": "MUTEKI DEAD SNAKE",
         "length": "",
-        "CDtitle": "かわいいメモリアル・ときめく恋と青春",
+        "CDtitle": [
+            "かわいいメモリアル",
+            "ときめく恋と青春"
+        ],
         "info": ""
     },
     {
@@ -722,7 +873,10 @@
     {
         "title": "WANTED",
         "lyrics": "Satoru Kurihara(Jazzin'park)",
-        "music": "Singo Kubota(Jazzin'park)・Satoru Kurihara(Jazzin'park)",
+        "music": [
+            "Singo Kubota(Jazzin'park)",
+            "Satoru Kurihara(Jazzin'park)"
+        ],
         "arranger": "Singo Kubota(Jazzin'park)",
         "length": "",
         "CDtitle": "かわいいメモリアル",
@@ -731,7 +885,10 @@
     {
         "title": "きみと青春",
         "lyrics": "Mio Jorakuji",
-        "music": "Gou Ishikuro・Mio Jorakuji",
+        "music": [
+            "Gou Ishikuro",
+            "Mio Jorakuji"
+        ],
         "arranger": "Gou Ishikuro",
         "length": "",
         "CDtitle": "かわいいメモリアル",
@@ -739,7 +896,10 @@
     },
     {
         "title": "ハピラブルー！",
-        "lyrics": "Tomoki Tamatani・youth case",
+        "lyrics": [
+            "Tomoki Tamatani",
+            "youth case"
+        ],
         "music": "youth case",
         "arranger": "Hirofumi Sasaki",
         "length": "",
@@ -752,7 +912,10 @@
         "music": "Koresawa",
         "arranger": "ha-j",
         "length": "",
-        "CDtitle": "ときめく恋と青春・最上級にかわいいの!",
+        "CDtitle": [
+            "ときめく恋と青春",
+            "最上級にかわいいの!"
+        ],
         "info": ""
     },
     {
@@ -774,7 +937,7 @@
         "info": ""
     },
     {
-        "title": "大、大、大すきっ！",
+        "title": "大、大、大すきっ!",
         "lyrics": "Noko",
         "music": "Noko",
         "arranger": "ha-j",
@@ -785,7 +948,10 @@
     {
         "title": "夢がとまらない！",
         "lyrics": "MUTEKI DEAD SNAKE",
-        "music": "MUTEKI DEAD SNAKE・Ryosuke Saito(Relic Lyric, inc.)",
+        "music": [
+            "MUTEKI DEAD SNAKE",
+            "Ryosuke Saito(Relic Lyric, inc.)"
+        ],
         "arranger": "Ryosuke Saito(Relic Lyric, inc.)",
         "length": "",
         "CDtitle": "ときめく恋と青春",
@@ -803,14 +969,17 @@
     {
         "title": "ユラグラブ",
         "lyrics": "Mio Jorakuji",
-        "music": "Gou Ishikuro・Mio Jorakuji",
+        "music": [
+            "Gou Ishikuro"
+            "Mio Jorakuji"
+        ],
         "arranger": "Gou Ishikuro",
         "length": "",
         "CDtitle": "ときめく恋と青春",
         "info": ""
     },
     {
-        "title": "ししし！",
+        "title": "ししし!",
         "lyrics": "yuba寝",
         "music": "yuba寝",
         "arranger": "竹内聖",
@@ -828,7 +997,7 @@
         "info": ""
     },
     {
-        "title": "リトライ、青春！",
+        "title": "リトライ、青春!",
         "lyrics": "真崎エリカ",
         "music": "本多友紀(Arte Refact)",
         "arranger": "脇眞富(Arte Refact)",
