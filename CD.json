@@ -30,6 +30,11 @@
         "date": "2017年11月22日"
     },
     {
+        "CDtitle": "ときおとめ",
+        "type": "album",
+        "date": "2018年4月11日"
+    },
+    {
         "CDtitle": "ときめき♡宣伝部のVICTORY STORY/青春ハートシェイカー",
         "type": "single",
         "date": "2019年4月10日"
@@ -43,6 +48,21 @@
         "CDtitle": "トゥモロー最強説!!",
         "type": "single",
         "date": "2020年8月26日"
+    },
+    {
+        "CDtitle": "ときめきがすべて",
+        "type": "album",
+        "date": "2020年12月23日"
+    },
+    {
+        "CDtitle": "すきすきすきすきすきすきっ!",
+        "type": "album",
+        "date": "2021年9月29日"
+    },
+    {
+        "CDtitle": "ハートギュッと!",
+        "type": "album",
+        "date": "2022年6月22日"
     },
     {
         "CDtitle": "STAR",
@@ -60,33 +80,18 @@
         "date": "2023年9月27日"
     },
     {
-        "CDtitle": "最上級にかわいいの!",
-        "type": "single",
-        "date": "2024年5月29日"
-    },
-    {
-        "CDtitle": "ときおとめ",
-        "type": "album",
-        "date": "2018年4月11日"
-    },
-    {
-        "CDtitle": "ときめきがすべて",
-        "type": "album",
-        "date": "2020年12月23日"
-    },
-    {
         "CDtitle": "ときめく恋と青春",
         "type": "album",
         "date": "2024年1月24日"
     },
     {
-        "CDtitle": "すきすきすきすきすきすきっ!",
-        "type": "album",
-        "date": "2021年9月29日"
+        "CDtitle": "最上級にかわいいの!",
+        "type": "single",
+        "date": "2024年5月29日"
     },
     {
-        "CDtitle": "ハートギュッと!",
+        "CDtitle": "ときめきルールブック",
         "type": "album",
-        "date": "2022年6月22日"
+        "date": "2024年12月4日"
     }
 ]
