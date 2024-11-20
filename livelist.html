@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>セットリストリンク</title>
+</head>
+<body>
+    <h1>セットリストリンク一覧</h1>
+    <ul id="setlistLinks"></ul>
+
+    <script>
+        // setlist.json からデータを非同期で読み込む関数
+        async function loadSetlistData() {
+            try {
+                // fetch() で setlist.json を読み込む
+                const response = await fetch('setlist.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load JSON data');
+                }
+
+                // JSONデータをパースする
+                const jsonData = await response.json();
+                generateSetlistLinks(jsonData);
+            } catch (error) {
+                console.error('Error loading JSON:', error);
+            }
+        }
+
+        // セットリストリンクを生成する関数
+        function generateSetlistLinks(jsonData) {
+            const setlistLinksContainer = document.getElementById('setlistLinks');
+
+            jsonData.forEach(function(live) {
+                const linkText = live.date + " " + live.LIVEtitle;
+                const linkUrl = `https://tokiyui.github.io/Sendenbu/sub/setlist.html?id=${live.id}`;
+                
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = linkUrl;
+                link.textContent = linkText;
+                listItem.appendChild(link);
+                setlistLinksContainer.appendChild(listItem);
+            });
+        }
+
+        // ページが読み込まれた時にセットリストデータを読み込む
+        window.onload = loadSetlistData;
+    </script>
+</body>
+</html>
