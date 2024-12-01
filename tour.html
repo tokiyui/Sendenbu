@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ツアーセットリスト比較ページ</title>
+    <style>
+        th,
+        td {
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .encore {
+            font-style: italic;
+        }
+
+        .different {
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ツアーセットリスト比較ページ</h1>
+    <label for="tourSelect">ツアー名を選択：</label>
+    <select id="tourSelect">
+        <option value="超ときめき♡宣伝部のきみのハートにロックオンTOUR 2024">超ときめき♡宣伝部のきみのハートにロックオンTOUR 2024</option>
+        <option value="超ときめき♡宣伝部のときめき♡春の晴れ舞台2024 ~自分史上1番ときめき放つわ~">超ときめき♡宣伝部のときめき♡春の晴れ舞台2024 ~自分史上1番ときめき放つわ~</option>
+        <option value="行くぜ! 超ときめき♡宣伝部 at 横浜アリーナ! ~隣はきみって決めてるの~">行くぜ! 超ときめき♡宣伝部 at 横浜アリーナ! ~隣はきみって決めてるの~</option>
+        <option value="超ときめき♡宣伝部のどきどき♡クリスマスパーティー2023 ~わたし一筋でいて!">超ときめき♡宣伝部のどきどき♡クリスマスパーティー2023 ~わたし一筋でいて!</option>
+        <option value="超ときめき♡宣伝部のハートロックオンホールTOUR2023 ~かわいいかわいいかわいすぎだよ!">超ときめき♡宣伝部のハートロックオンホールTOUR2023 ~かわいいかわいいかわいすぎだよ!</option>
+        <option value="超ときめき♡宣伝部のときめき♡春の晴れ舞台2023 LOVEをくれなきゃイヤイヤよ!">超ときめき♡宣伝部のときめき♡春の晴れ舞台2023 LOVEをくれなきゃイヤイヤよ!</option>
+        <option value="超ときめき♡宣伝部のどきどき♡クリスマスパーティー2022 in 中野サンプラザホール ~もう一度また、ゼッタイだよ~">超ときめき♡宣伝部のどきどき♡クリスマスパーティー2022 in 中野サンプラザホール ~もう一度また、ゼッタイだよ~</option>
+        <option value="超ときめき♡宣伝部のサンリオキャラクターズと行く! 真夏のハートギュッとTOUR2022">超ときめき♡宣伝部のサンリオキャラクターズと行く! 真夏のハートギュッとTOUR2022</option>
+        <option value="いのりまち町民集会2021-おかわり-">いのりまち町民集会2021-おかわり-</option>
+        <option value="いのりまち町民集会2019">いのりまち町民集会2019</option>
+        <option value="いのりまち町民集会2018">いのりまち町民集会2018</option>
+    </select>
+
+    <br><br>
+    <table id="concertTable">
+        <!-- Concert data will be displayed here -->
+    </table>
+
+    <div class="container" id="setlistContainer"></div>
+
+    <script>
+        const concertTable = document.getElementById('concertTable');
+        const tourSelect = document.getElementById('tourSelect');
+        const setlistContainer = document.getElementById('setlistContainer');
+
+        tourSelect.addEventListener('change', () => {
+            setlistContainer.innerHTML = '';
+            concertTable.innerHTML = '';
+            const selectedTour = tourSelect.value;
+
+            if (selectedTour) {
+                fetch('setlist.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const concerts = data.filter(item => item.tourtitle === selectedTour);
+                        concerts.sort((a, b) => a.id.localeCompare(b.id));
+
+                        const table = document.createElement('table');
+
+                        const headerRow = table.insertRow();
+                        headerRow.insertCell().textContent = '';
+                        concerts.forEach(concert => {
+                            headerRow.insertCell().textContent = concert.LIVEtitle.replace(concert.tourtitle, '');
+                        });
+                        
+                        const dateRow = table.insertRow();
+                        dateRow.insertCell().textContent = '開催日';
+                        concerts.forEach(concert => {
+                            dateRow.insertCell().textContent = concert.date;
+                        });
+
+                        const venueRow = table.insertRow();
+                        venueRow.insertCell().textContent = '会場';
+                        concerts.forEach(concert => {
+                            venueRow.insertCell().textContent = concert.venue;
+                        });
+
+                        const row = table.insertRow();
+                        row.insertCell().textContent = '';
+                        concerts.forEach(concert => {
+                            row.insertCell().textContent = '【セットリスト】';
+                        });
+
+                        const setlistRows = concerts[0].setlist.length;
+                        for (let i = 0; i < setlistRows; i++) {
+                            const row = table.insertRow();
+                            const indexCell = row.insertCell();
+                            indexCell.textContent = i + 1;
+
+                            const setlistValues = concerts.map(concert => concert.setlist[i]);
+                            const isSame = setlistValues.every((val, idx, arr) => val === arr[0]);
+
+                            concerts.forEach(concert => {
+                                const cell = row.insertCell();
+                                cell.textContent = concert.setlist[i];
+                                if (!isSame) {
+                                    row.style.backgroundColor = 'aqua';
+                                }
+                            });
+                        }
+
+                        const encoreList = concerts.map(concert => {
+                            if (Array.isArray(concert.encore)) {
+                                return concert.encore;
+                            } else {
+                                return [concert.encore];
+                            }
+                        });
+
+                        if (encoreList[0][0]) {
+                            const encorerow = table.insertRow();
+                            encorerow.insertCell().textContent = '';
+                            concerts.forEach(concert => {
+                                encorerow.insertCell().textContent = '【アンコール】';
+                            });
+
+                            const maxEncoreRows = Math.max(...encoreList.map(encore => encore.length));
+                            for (let i = 0; i < maxEncoreRows; i++) {
+                                const row = table.insertRow();
+                                const indexCell = row.insertCell();
+                                indexCell.textContent = 'EC' + (i + 1);
+
+                                const encoreValues = encoreList.map(encore => encore[i] || '');
+                                const isSameEncore = encoreValues.every((val, idx, arr) => val === arr[0]);
+
+                                encoreValues.forEach((value, idx) => {
+                                    const cell = row.insertCell();
+                                    cell.textContent = value;
+                                    if (!isSameEncore && value !== '') {
+                                        row.classList.add('different');
+                                    }
+                                });
+                            }
+                        }
+
+                        if (concerts.some(concert => concert.Wencore)) {
+                            const wencorerow = table.insertRow();
+                            const cell = wencorerow.insertCell();
+                            cell.textContent = 'WEC';
+                            concerts.forEach(concert => {
+                                wencorerow.insertCell().textContent = concert.Wencore;
+                            });
+                        }
+
+                        setlistContainer.appendChild(table);
+                    });
+            }
+        });
+    </script>
+</body>
+
+</html>
