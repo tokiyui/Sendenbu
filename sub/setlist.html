@@ -45,11 +45,11 @@ if (!targetLiveId) {
 
                     const renderSetlist = setlist => {
                         let setlistHTML = '<ul>';
-                        setlist.forEach((song, index) => {
+                        let count = 1;
+                        setlist.forEach((song) => {
                             if (song.trim() !== '') {
-                                setlistHTML += `<p>${index + 1}. <a href="./search.html?name=${song}">${song}</a></p>`;
-                            } else {
-                            index -= 1;
+                                setlistHTML += `<p>${count}. <a href="./search.html?name=${song}">${song}</a></p>`;
+                                count++;
                             }
                         });
                         setlistHTML += '</ul>';
@@ -61,11 +61,11 @@ if (!targetLiveId) {
                             return '';
                         }
                         let encoreHTML = '<ul>';
-                        encore.forEach((song, index) => {
+                        let count = 1;
+                        encore.forEach((song) => {
                             if (song.trim() !== '') {
-                                encoreHTML += `<p>${index + 1}. <a href="./search.html?name=${song}">${song}</a></p>`;
-                            } else {
-                            index -= 1;
+                                encoreHTML += `<p>${count}. <a href="./search.html?name=${song}">${song}</a></p>`;
+                                count++;
                             }
                         });
                         encoreHTML += '</ul>';
