@@ -48,6 +48,8 @@ if (!targetLiveId) {
                         setlist.forEach((song, index) => {
                             if (song.trim() !== '') {
                                 setlistHTML += `<p>${index + 1}. <a href="./search.html?name=${song}">${song}</a></p>`;
+                            } else {
+                            index -= 1;
                             }
                         });
                         setlistHTML += '</ul>';
@@ -62,6 +64,8 @@ if (!targetLiveId) {
                         encore.forEach((song, index) => {
                             if (song.trim() !== '') {
                                 encoreHTML += `<p>${index + 1}. <a href="./search.html?name=${song}">${song}</a></p>`;
+                            } else {
+                            index -= 1;
                             }
                         });
                         encoreHTML += '</ul>';
