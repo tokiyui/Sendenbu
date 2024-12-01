@@ -27,7 +27,6 @@ if (!targetLiveId) {
 
     let found = false;
 
-    // 各JSONファイルを順番に読み込み、IDが一致するライブ情報を表示
     const loadLiveInfo = async () => {
         for (const file of jsonFiles) {
             try {
@@ -47,7 +46,9 @@ if (!targetLiveId) {
                     const renderSetlist = setlist => {
                         let setlistHTML = '<ul>';
                         setlist.forEach((song, index) => {
-                            setlistHTML += `<p>${index + 1}. <a href="./search.html?name=${song}">${song}</a></p>`;
+                            if (song.trim() !== '') {
+                                setlistHTML += `<p>${index + 1}. <a href="./search.html?name=${song}">${song}</a></p>`;
+                            }
                         });
                         setlistHTML += '</ul>';
                         return setlistHTML;
@@ -59,7 +60,9 @@ if (!targetLiveId) {
                         }
                         let encoreHTML = '<ul>';
                         encore.forEach((song, index) => {
-                            encoreHTML += `<p>${index + 1}. <a href="./search.html?name=${song}">${song}</a></p>`;
+                            if (song.trim() !== '') {
+                                encoreHTML += `<p>${index + 1}. <a href="./search.html?name=${song}">${song}</a></p>`;
+                            }
                         });
                         encoreHTML += '</ul>';
                         return encoreHTML;
