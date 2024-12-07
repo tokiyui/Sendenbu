@@ -14,8 +14,8 @@
         padding: 8px;
         text-align: left;
     }
-    .green-cell {
-        background-color: green;
+    .lime-cell {
+        background-color: lime;
     }
 </style>
 </head>
@@ -94,8 +94,8 @@ const performanceData = setlists.reduce((acc, setlist) => {
         
         const formattedDate = oldestDate.date !== 'No release date found' ? oldestDate.date : 'No release date found';
         const latestPerformanceDate = performanceData.latestDate ? formatDateToJapanese(performanceData.latestDate) : '未披露';
-        const lyricsClass = song.lyrics.includes('吉川ひより') ? 'green-cell' : '';
-        const musicClass = song.music.includes('吉川ひより') ? 'green-cell' : '';
+        const lyricsClass = song.lyrics.includes('吉川ひより') ? 'lime-cell' : '';
+        const musicClass = song.music.includes('吉川ひより') ? 'lime-cell' : '';
  
 const cdLinks = Array.isArray(song.CDtitle)
     ? song.CDtitle.map(cdTitle => {
