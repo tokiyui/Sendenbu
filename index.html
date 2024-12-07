@@ -100,9 +100,9 @@ const performanceData = setlists.reduce((acc, setlist) => {
 const cdLinks = Array.isArray(song.CDtitle)
     ? song.CDtitle.map(cdTitle => {
         const matchedCD = matchingCDs.find(cd => cd.CDtitle === cdTitle);
-        return matchedCD ? `<a href="https://www.inoriminase.com/discography/?id=${matchedCD.discoid}">${cdTitle}</a>` : cdTitle;
+        return matchedCD ? `<a href="https://toki-sen.com/musics/${matchedCD.discoid}">${cdTitle}</a>` : cdTitle;
     })
-    : matchingCDs.map(cd => `<a href="https://www.inoriminase.com/discography/?id=${cd.discoid}">${cd.CDtitle}</a>`);
+    : matchingCDs.map(cd => `<a href="https://toki-sen.com/musics/${cd.discoid}">${cd.CDtitle}</a>`);
 
 const formattedCDs = cdLinks.join(', ');
 
