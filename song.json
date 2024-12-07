@@ -914,7 +914,8 @@
         "length": "",
         "CDtitle": [
             "ときめく恋と青春",
-            "最上級にかわいいの!"
+            "最上級にかわいいの!",
+            "ときめきルールブック"
         ],
         "info": ""
     },
@@ -1003,6 +1004,84 @@
         "arranger": "脇眞富(Arte Refact)",
         "length": "",
         "CDtitle": "最上級にかわいいの!",
+        "info": ""
+    },
+    {
+        "title": "こんなあたしはいかがですか",
+        "lyrics": "コレサワ",
+        "music": "コレサワ",
+        "arranger": "ha-j",
+        "length": "",
+        "CDtitle": "ときめきルールブック",
+        "info": ""
+    },
+    {
+        "title": "発見!ポジティブ☆モンスター!!",
+        "lyrics": "七条レタス",
+        "music": "D.watt",
+        "arranger": "D.watt",
+        "length": "",
+        "CDtitle": "ときめきルールブック",
+        "info": ""
+    },
+    {
+        "title": "ちょま",
+        "lyrics": "yuba寝",
+        "music": "yuba寝",
+        "arranger": "竹内聖",
+        "length": "",
+        "CDtitle": "ときめきルールブック",
+        "info": ""
+    },
+    {
+        "title": "We Can Do It Now!",
+        "lyrics": "MUTEKI DEAD SNAKE",
+        "music": "MUTEKI DEAD SNAKE",
+        "arranger": "MUTEKI DEAD SNAKE",
+        "length": "",
+        "CDtitle": "ときめきルールブック",
+        "info": ""
+    },
+    {
+        "title": "ときどきセンチメンタル",
+        "lyrics": "すぅ",
+        "music": "クボナオキ",
+        "arranger": "クボナオキ",
+        "length": "",
+        "CDtitle": "ときめきルールブック",
+        "info": ""
+    },
+    {
+        "title": "未完成ガール",
+        "lyrics": "吉川ひより",
+        "music": [
+            "常楽寺澪",
+            "石黑剛"
+        ],
+        "arranger": "石黑剛",
+        "length": "",
+        "CDtitle": "ときめきルールブック",
+        "info": ""
+    },
+    {
+        "title": "下書きの恋",
+        "lyrics": "谷口鮪",
+        "music": "谷口鮪",
+        "arranger": "江口亮",
+        "length": "",
+        "CDtitle": "ときめきルールブック",
+        "info": ""
+    },
+    {
+        "title": "超最強",
+        "lyrics": "安部大希",
+        "music": [
+            "安部大希",
+            "宮崎諒"
+        ],
+        "arranger": "宮崎諒",
+        "length": "",
+        "CDtitle": "ときめきルールブック",
         "info": ""
     },
     {
