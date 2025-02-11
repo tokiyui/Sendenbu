@@ -103,7 +103,7 @@ const performanceData = setlists.reduce((acc, setlist) => {
 }, { count: 0, latestDate: null, id: null });
         
         const formattedDate = oldestDate.date !== 'No release date found' ? oldestDate.date : 'No release date found';
-        const latestPerformanceDate = performanceData.latestDate ? formatDateToJapanese(performanceData.latestDate) : '未披露';
+        const latestPerformanceDate = performanceData.latestDate ? performanceData.latestDate.toISOString().split('T')[0] : null;
         const lyricsClass = song.lyrics.includes('吉川ひより') ? 'lime-cell' : '';
         const musicClass = song.music.includes('吉川ひより') ? 'lime-cell' : '';
  
