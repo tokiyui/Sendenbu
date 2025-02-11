@@ -42,6 +42,13 @@
     </table>
 
 <script>
+        let songData = []; // 追加: 曲データを保存する配列
+        let reverseSortPerformanceCount = true; // 披露回数の逆順フラグ
+        let reverseSortPerformanceDate = true; // 最終披露日の逆順フラグ
+        let reverseSortReleaseDate = false; // リリース日の逆順フラグ
+        let releaseDateToggle = 0; // リリース日ソートの状態を管理
+        let reverseSortLength = false; // 長さのソート用
+    
     function formatDateToJapanese(date) {
         const year = date.getFullYear();
         const month = (date.getMonth() + 1).toString();
@@ -121,9 +128,17 @@ const row = `
     <td>${song.length}</td>
     <td>${formattedCDs}</td>
     <td>${formattedDate}</td>
-</tr>
-`;
-
+</tr>`;
+        
+                                        songData.push({
+                                            title: song.title,
+                                            rowHTML: row,
+                                            performanceCount: performanceData.count,
+                                            latestPerformanceDate: latestPerformanceDate, // 日付のISO形式で保存
+                                            length: song.length,
+                                            releaseDate: formattedDate
+                                        });
+        
         songTable.innerHTML += row;
     });
 }
