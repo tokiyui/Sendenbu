@@ -112,7 +112,7 @@
 
                             concerts.forEach(concert => {
                                 const cell = row.insertCell();
-                                cell.textContent = concert.setlist[i];
+                                cell.innerHTML = `<a href="./sub/search.html?name=${encodeURIComponent(concert.setlist[i])}">${concert.setlist[i]}</a>`;
                                 if (!isSame) {
                                     row.style.backgroundColor = 'orange';
                                 }
@@ -145,7 +145,7 @@
 
                                 encoreValues.forEach((value, idx) => {
                                     const cell = row.insertCell();
-                                    cell.textContent = value;
+                                    cell.innerHTML = `<a href="./sub/search.html?name=${encodeURIComponent(value)}">${value}</a>`;
                                     if (!isSameEncore && value !== '') {
                                         row.classList.add('different');
                                     }
@@ -161,6 +161,16 @@
                                 wencorerow.insertCell().textContent = concert.Wencore;
                             });
                         }
+
+  concerts.forEach(concert => {
+    const cell = wencorerow.insertCell();
+    if (concert.Wencore) {
+      cell.innerHTML = `<a href="./sub/search.html?name=${encodeURIComponent(concert.Wencore)}">${concert.Wencore}</a>`;
+    } else {
+      cell.innerHTML = '&nbsp;'; // 空白のセルを維持
+    }
+  });
+}
 
                         setlistContainer.appendChild(table);
                     });
