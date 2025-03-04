@@ -74,7 +74,10 @@
         "music": "浅利進吾",
         "arranger": "浅利進吾",
         "length": "6:09",
-        "CDtitle": "むてきのうた",
+        "CDtitle": [
+            "むてきのうた",
+            "すきすきすきすきすきすきっ!"
+        ],
         "info": ""
     },
     {
@@ -417,7 +420,10 @@
         "music": "中村瑛彦(SUPA LOVE)",
         "arranger": "伊東大和(SUPA LOVE)",
         "length": "5:17",
-        "CDtitle": "ときおとめ",
+        "CDtitle": [
+            "ときおとめ",
+            "すきすきすきすきすきすきっ!"
+        ],
         "info": ""
     },
     {
