@@ -291,7 +291,10 @@
         "music": "ジンツチハシ",
         "arranger": "ジンツチハシ",
         "length": "4:31",
-        "CDtitle": "DEADHEAT",
+        "CDtitle": [
+            "DEADHEAT",
+            "ハートな胸の内♡/超最強"
+        ]
         "utanet": "240230",
         "info": ""
     },
@@ -1187,7 +1190,10 @@
         ],
         "arranger": "宮崎諒",
         "length": "3:19",
-        "CDtitle": "ときめきルールブック",
+        "CDtitle": [
+            "ときめきルールブック",
+            "ハートな胸の内♡/超最強"
+        ],
         "utanet": "364571",
         "info": ""
     },
@@ -1210,5 +1216,65 @@
         "CDtitle": "ときめきルールブック",
         "utanet": "360784",
         "info": ""
-    }
+    },
+    {
+        "title": "世界でいちばんアイドル",
+        "lyrics": "MUTEKI DEAD SNAKE",
+        "music": "MUTEKI DEAD SNAKE",
+        "arranger": "ha-j",
+        "length": "3:22",
+        "CDtitle": "世界でいちばんアイドル/ひみつのふふふ",
+        "utanet": "371115",
+        "info": ""
+    },
+    {
+        "title": "ひみつのふふふ",
+        "lyrics": "なみぐる",
+        "music": "なみぐる",
+        "arranger": "なみぐる",
+        "length": "2:55",
+        "CDtitle": "世界でいちばんアイドル/ひみつのふふふ",
+        "utanet": "370692",
+        "info": ""
+    },
+    {
+        "title": "セツナリベンジ",
+        "lyrics": "瀬名航",
+        "music": "瀬名航",
+        "arranger": "瀬名航",
+        "length": "3:04",
+        "CDtitle": "世界でいちばんアイドル/ひみつのふふふ",
+        "utanet": "372227",
+        "info": ""
+    },
+    {
+        "title": "ハートな胸の内♡",
+        "lyrics": "清竜人",
+        "music": "清竜人",
+        "arranger": "清竜人",
+        "length": "3:43",
+        "CDtitle": "ハートな胸の内♡/超最強",
+        "utanet": "376093",
+        "info": ""
+    },
+    {
+        "title": "シンデレラのラララ♡",
+        "lyrics": "nobara kaede",
+        "music": "宮崎諒",
+        "arranger": "宮崎諒",
+        "length": "3:37",
+        "CDtitle": "ハートな胸の内♡/超最強",
+        "utanet": "383848",
+        "info": ""
+    },
+    {
+        "title": "まごころ My Heart",
+        "lyrics": "スノヒロ",
+        "music": "三好啓太",
+        "arranger": "三好啓太",
+        "length": "3:46",
+        "CDtitle": "ハートな胸の内♡/超最強",
+        "utanet": "376602",
+        "info": ""
+    },
 ]
