@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,6 @@ if (!targetLiveId) {
     document.getElementById('liveInfo').innerHTML = '<p>No ID provided in the query parameters.</p>';
 } else {
     const jsonFiles = [];
-    
     jsonFiles.push("../setlist.json");
 
     let found = false;
@@ -43,42 +42,91 @@ if (!targetLiveId) {
                         return days[date.getDay()];
                     };
 
+                    // セットリスト表示（メドレー対応）
                     const renderSetlist = setlist => {
                         let setlistHTML = '<ul>';
-                        let count = 1;
-                        setlist.forEach((song) => {
-                            if (song.trim() !== '') {
-                                setlistHTML += `<p>${count}. <a href="./search.html?name=${song}">${song}</a></p>`;
-                                count++;
+                        setlist.forEach((song, index) => {
+                            if (typeof song === 'string') {
+                                setlistHTML += `<p>${index + 1}. <a href="./search.html?name=${encodeURIComponent(song)}">${song}</a></p>`;
+                            } else if (typeof song === 'object' && Array.isArray(song.medley)) {
+                                setlistHTML += `<p>${index + 1}. 【メドレー】<br>`;
+                                song.medley.forEach((medleySong, medleyIndex) => {
+                                    setlistHTML += `<a href="./search.html?name=${encodeURIComponent(medleySong)}">${medleySong}</a>`;
+                                    if (medleyIndex < song.medley.length - 1) {
+                                        setlistHTML += '<br>';
+                                    }
+                                });
+                                setlistHTML += `</p>`;
                             }
                         });
                         setlistHTML += '</ul>';
                         return setlistHTML;
                     };
 
+                    // Encore（EC）の表示
                     const renderEncore = encore => {
-                        if (!encore || encore.length === 0) {
-                            return '';
+                        if (!Array.isArray(encore)) encore = encore ? [encore] : [];
+                        let encoreHTML = '';
+
+                        if (encore.length > 0) {
+                            encoreHTML += '<ul>';
+                            encore.forEach((song, index) => {
+                                if (typeof song === 'string') {
+                                    encoreHTML += `<p>EC${index + 1}. <a href="./search.html?name=${encodeURIComponent(song)}">${song}</a></p>`;
+                                } else if (typeof song === 'object' && Array.isArray(song.medley)) {
+                                    encoreHTML += `<p>EC${index + 1}. 【メドレー】<br>`;
+                                    song.medley.forEach((medleySong, medleyIndex) => {
+                                        encoreHTML += `<a href="./search.html?name=${encodeURIComponent(medleySong)}">${medleySong}</a>`;
+                                        if (medleyIndex < song.medley.length - 1) {
+                                            encoreHTML += '<br>';
+                                        }
+                                    });
+                                    encoreHTML += `</p>`;
+                                }
+                            });
+                            encoreHTML += '</ul>';
                         }
-                        let encoreHTML = '<ul>';
-                        let count = 1;
-                        encore.forEach((song) => {
-                            if (song.trim() !== '') {
-                                encoreHTML += `<p>${count}. <a href="./search.html?name=${song}">${song}</a></p>`;
-                                count++;
-                            }
-                        });
-                        encoreHTML += '</ul>';
                         return encoreHTML;
                     };
 
+                    // WEncore（WEC）の表示
+                    const renderWencore = wencore => {
+                        if (!Array.isArray(wencore)) wencore = wencore ? [wencore] : [];
+                        let wencoreHTML = '';
+
+                        if (wencore.length > 0) {
+                            wencoreHTML += '<ul>';
+                            wencore.forEach((song, index) => {
+                                if (typeof song === 'string') {
+                                    wencoreHTML += `<p>WEC${index + 1}. <a href="./search.html?name=${encodeURIComponent(song)}">${song}</a></p>`;
+                                } else if (typeof song === 'object' && Array.isArray(song.medley)) {
+                                    wencoreHTML += `<p>WEC${index + 1}. 【メドレー】<br>`;
+                                    song.medley.forEach((medleySong, medleyIndex) => {
+                                        wencoreHTML += `<a href="./search.html?name=${encodeURIComponent(medleySong)}">${medleySong}</a>`;
+                                        if (medleyIndex < song.medley.length - 1) {
+                                            wencoreHTML += '<br>';
+                                        }
+                                    });
+                                    wencoreHTML += `</p>`;
+                                }
+                            });
+                            wencoreHTML += '</ul>';
+                        }
+                        return wencoreHTML;
+                    };
+
+                    // HTMLまとめて出力
                     const html = `
                         <h2>${liveData.LIVEtitle}</h2>
                         <h3>${liveData.date} (${getDayOfWeek(liveData.date)}) @${liveData.venue}</h3>
+
                         ${renderSetlist(liveData.setlist)}
-                        ${liveData.encore && liveData.encore.length > 0 ? `<p>【アンコール】</p>${renderEncore(liveData.encore)}` : ''}
-                        ${liveData.Wencore ? `<p>【ダブルアンコール】</p><p><ul><a href="./search.html?name=${liveData.Wencore}">${liveData.Wencore}</a></ul></p>` : ''}
+
+                        ${liveData.encore ? `<p>【アンコール】</p>${renderEncore(liveData.encore)}` : ''}
+
+                        ${liveData.Wencore ? `<p>【ダブルアンコール】</p>${renderWencore(liveData.Wencore)}` : ''}
                     `;
+
                     liveInfo.innerHTML = html;
 
                     found = true;
@@ -90,12 +138,14 @@ if (!targetLiveId) {
         }
 
         if (!found) {
-            document.getElementById('liveInfo').innerHTML = '<p>No live information found for the provided ID.</p>';
+            document.getElementById('liveInfo').innerHTML =
+                '<p>No live information found for the provided ID.</p>';
         }
     };
 
     loadLiveInfo();
 }
 </script>
+
 </body>
 </html>
